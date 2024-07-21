@@ -1,0 +1,71 @@
+.custom-text {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+@font-face {
+  font-family: girlroysemibold;
+  src: url(/assets/fonts/Gilroy-SemiBold.woff);
+  font-weight: bold;
+}
+
+.custom-font {
+  font-family: girlroysemibold !important;
+}
+
+.gradienteffect {
+  background: linear-gradient(135deg, rgba(245, 214, 250, 0.5) 2.88%, rgba(230, 224, 254, 0.5) 98.14%);
+  width: 500px !important;
+  height: 500px !important;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  background: #000;
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .video-container {
+    padding-bottom: 56.25%;
+    /* Maintain 16:9 aspect ratio */
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#title {
+  min-height: 2em; /* Pas dit aan aan de grootte van je tekst */
+}
